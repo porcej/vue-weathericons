@@ -1,0 +1,50 @@
+{
+  "name": "vue-weathericons",
+  "version": "0.0.1",
+  "description": "VueJs component for weathericons using CSS.",
+  "exportName": "vue-weathericons",
+  "main": "src/index.js",
+  "browser": {
+    "VueWeatherWidget": "src/VueWeatherIcons.vue"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "lint-fix": "eslint --fix src",
+    "build:dev": "rollup --config rollup.config.js",
+    "build:prod": "rollup --environment BUILD:production --config rollup.config.js",
+    "build": "npm run lint && npm run build:dev && npm run build:prod",
+    "watch": "chokidar  \"*.js\" \"src/**/*\" --initial --command \"npm run build:dev\"",
+    "patch": "npm version patch --no-git-tag-version && git add package.json package-lock.json && git commit -m \"Update version:patch\" && git push && npm publish",
+    "minor": "npm version minor --no-git-tag-version && git add package.json package-lock.json && git commit -m \"Update version:minor\" && git push && npm publish",
+    "major": "npm version major --no-git-tag-version && git add package.json package-lock.json && git commit -m \"Update version:major\" && git push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpor/vue-weather-widget.git"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "vue-weather",
+    "vue-weathericons",
+    "vuejs-weather",
+    "vuejs-weathericons",
+    "vue",
+    "vuejs",
+    "vue-plugin",
+    "vue-component"
+  ],
+  "author": "Joe Porcelli <porcej@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thecrius/vue-weathericons/issues"
+  },
+  "homepage": "https://github.com/porcej/vue-weathericons#readme",
+  "dependencies": {
+    "weathericons": "^2.0.10"
+  }
+}
