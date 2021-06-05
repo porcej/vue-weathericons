@@ -31,8 +31,7 @@ export default {
 </script>
 
 <template>
-  <div class="whatever">
-    <p>All attributes are optional and non mutually exclusive, apart from the 'icon' of course:</p>
+  <div>
     <weather-icon icon="day-sunny" />
     <weather-icon icon="wind" wind="towards-NW" />
     <weather-icon icon="wind" windDeg="towards-160" />
