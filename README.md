@@ -5,7 +5,7 @@ VueJs component for [weathericons](https://erikflowers.github.io/weather-icons/)
 
 ## Requirements
 
--[weathericons](https://www.npmjs.com/package/weathericons)
+- [weathericons](https://www.npmjs.com/package/weathericons)
 
 ## Installation
 
